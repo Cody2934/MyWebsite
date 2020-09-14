@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Project from '../Project/Project';
+import projectData from '../../data/projectData';
 
-export default class Projects extends Component {
-  render() {
-    return (
-      <div>
-        <h4>scrollable cards OR cards already layed out</h4>
-      </div>
-    );
-  }
-}
+
+const Projects = () => (
+  <div>
+    {Project}
+  </div>
+)

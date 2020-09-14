@@ -1,12 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Project extends Component {
-  render() {
-    return (
-      <div>
-        <h4>title</h4>
-        <h5>description</h5>
-      </div>
-    );
-  }
-}
+const Project = ({name, image, about, description, github, site, type}) => (
+  <div className="the-card">
+
+    <div className="image-container">
+      <img className="project-image" src={image} alt={name} />
+    </div>
+
+    <div className="card-text-front">
+      <h2>{name}</h2>
+      <p>{about}</p>
+      <p>{type}</p>
+    </div>
+
+    <div className="card-text-back">
+      <p>{description}</p>
+      <p>{github}</p>
+      <p>{site}</p>
+    </div>
+
+  </div>
+);
+
+export default Project;
